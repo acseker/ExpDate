@@ -51,3 +51,10 @@ tr:nth-child(odd) {
   100% {transform: translate(-50%);}
 }
 
+$.getJSON('https://api.github.com/users/trevorsenior?callback=?', 
+    function(data) {
+        var jsonString = JSON.stringify(data, null, 4);
+        $('#jsonCode').text(jsonString);
+        prettyPrint(); //apply syntax highlighting to to JSON
+    });
+
