@@ -17,7 +17,7 @@ dates. It generates bounding boxes with predictions in the image.
 
 <figure>
     <div>
-    <img src="figures/test_00302.jpg" height="400"/> <img src="figures/test_00148.jpg" height="400"/> <img src="figures/test_00593.jpg" height="400"/>
+    <img src="figures/test_00665.jpg" height="400"/> <img src="figures/test_00148.jpg" height="400"/> <img src="figures/test_00593.jpg" height="400"/>
     </div>
 <figcaption style="text-align: center; font-size: 16px;"><strong>Figure 1: </strong> Qualitative results of the expiration date recognition and understanding.</figcaption>
 </figure>
