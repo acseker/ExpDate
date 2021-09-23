@@ -23,10 +23,9 @@ dates. It generates bounding boxes with predictions in the image.
 </figure>
 
 
-## Demo
-We've released executable files of the proposed framework. Anyone
-who would like to test their own images for recognition and
-understanding the expiration date can use our demo file. 
+## Executable
+We've released executable files of the proposed framework for recognition and understanding the expiration date. 
+Anyone who would like to test their own images can use our executable files.
 
 
 ## Dataset
