@@ -25,7 +25,6 @@
 
 
         <div id="container" style="width:100vw; background: #9b2226;">
-            <div style="height: 25px; background: #9b2226;"></div>
             <div class="photobanner">
                 <img src="images/img_00016.jpg" height="250"/>
                 <img src="images/img_00115.jpg" height="250"/>
@@ -44,14 +43,14 @@
                 <img src="images/test_00625.jpg" height="250"/>
                 <img src="images/test_00631.jpg" height="250"/>
             </div>
-            <div style="height: 25px; background: #9b2226;"></div>
         </div>
 
         <div style="margin-left: 20vw; margin-right: 20vw; margin-top: 6vh;">
             <center>
                 <b style="text-align:center; font-size: 30px;">
-                    A Generalized Framework for Recognition of Expiration Date on Product Packages Using
-                    Fully Convolutional Networks</b>
+                    A Generalized Framework <br>
+                    for Recognition of Expiration Date on Product Packages <br>
+                    Using Fully Convolutional Networks</b>
             </center>
 
 
@@ -78,7 +77,7 @@
 
 
             <br>
-            <b style="font-size: 20px;">Introduction</b>
+            <b style="font-size: 30px;">Introduction</b>
             <p align="justify" style="font-size: 16px;">
                 This project proposes a generalized framework for recognizing and
                 understanding expiration date of the products. The proposed
@@ -107,40 +106,79 @@
                 </figure>
             </a>
 
-            <b style="font-size: 20px;">Executable File</b>
+            <b style="font-size: 20px;">Executable Files</b>
             <p align="justify" style="font-size: 16px;">
                 We've released
-                <a href="https://drive.google.com/drive/folders/1ch6pOgzInlGOOo3OHyMNJ-OUiHLSF623?usp=sharing">executable</a>
-                files of the proposed framework for Windows (run_windows.exe) and Ubuntu (run_ubuntu.exe) operating systems.
-                The executable file for Windows is able to use only cpu whereas the executable file for Ubuntu is able to use both cpu and gpu.
-                Anyone who would like to test their own images for recognition and
-                understanding expiration date can use our executable file.
-                Before running the executable file,
-                first, create a folder called <code>images</code>, that contains test images.
-                Then, place the <code>images</code> folder and the <code>.exe</code> file in the same directory.
-                After running the executable file,
-                a folder called <code>results</code> will be created in the same directory as exe file.
-                Then, the proposed framework will save the predictions in the <code>results</code> folder,
-                by running the following commands;
-
-<pre style="width: 100%; "><code class="language-markup"># For windows
-cd path/to/exe
-run_windows.exe</code></pre>
-
-<pre style="width: 100%; "><code class="language-markup"># For ubuntu
-cd path/to/exe
-./run_ubuntu</code></pre>
-
-<!--                We also provide an executable file in which you can use your webcam for-->
-<!--                recognizing and understanding the expiration date in real-time.-->
+                <a href="https://drive.google.com/drive/folders/1ch6pOgzInlGOOo3OHyMNJ-OUiHLSF623?usp=sharing">
+                    <strong>executable</strong></a>
+                files of the proposed framework for both windows and ubuntu operating systems.
+                To see the detection and recognition results separately, we divided the proposed framework into
+                two executable files as <code>ExpDateDetection.exe</code> for detecting expiration date
+                and <code>ExpDateRecognition.exe</code> for recognizing and understanding the detected expiration date.
+                Anyone who would like to test their own images can use the following instructions.
             </p>
 
+            <b style="font-size: 20px;">Testing Images</b>
+             <p align="justify" style="font-size: 16px;">
+                 <strong>Step 1:</strong> Create a folder called <code>images</code>, that contains the test images.
+                <br>
+                <strong>Step 2:</strong> Place the <code>images</code> folder and all <code>.exe</code> files in the same directory.
+                <br>
+                <strong>Step 3:</strong> Run the following commands for detecting expiration dates.
+            </p>
+
+<pre style="width: 100%; "><code class="language-markup"># for windows
+cd path/to/exe
+ExpDateDetection.exe
+
+# for ubuntu
+cd path/to/exe
+./ExpDateDetection</code></pre>
+
+            <p align="justify" style="font-size: 16px;">
+                After running <code>ExpDateDetection.exe</code> file,
+                a folder called <code>detection_results</code> that contains detected expiration dates
+                and a folder called <code>images_recognition</code> that contains the cropped regions of detected expiration dates
+                will be created in the same directory as exe files.
+                <br>
+                <strong>Step 4:</strong> Run the following commands for recognizing expiration dates.
+            </p>
+
+<pre style="width: 100%; "><code class="language-markup"># for windows
+cd path/to/exe
+ExpDateRecognition.exe
+
+# for ubuntu
+cd path/to/exe
+./ExpDateRecognition</code></pre>
+
+            <p align="justify" style="font-size: 16px;">
+                After running <code>ExpDateRecognition.exe</code> file,
+                a folder called <code>recognition_results</code> will be created in the same directory as exe files.
+                It contains recognized expiration dates in a <code>.txt</code> file and day, month, and year detection results.
+            </p>
+
+            <b style="font-size: 20px;">Testing Webcam</b>
+            <p align="justify" style="font-size: 16px;">
+                We also provide an executable file in which you can use your webcam for
+                recognizing and understanding the expiration date in real-time. You use the following instructions
+                to use your webcam.
+            </p>
+
+<pre style="width: 100%; "><code class="language-markup"># for windows
+cd path/to/exe
+webcam.exe
+
+# for ubuntu
+cd path/to/exe
+./webcam</code></pre>
 
             <br>
             <b style="font-size: 30px;">ExpDate: Expiration Date Dataset</b>
             <p align="justify" style="font-size: 16px;">
                 In the lack of a publicly available dataset, we create a novel dataset,
-                <a href="https://drive.google.com/file/d/1Thq5xMPey9xcV-hg9QnPVbfqFYVCo-ix/view?usp=sharing">ExpDate</a>,
+                <a href="https://drive.google.com/file/d/1Thq5xMPey9xcV-hg9QnPVbfqFYVCo-ix/view?usp=sharing">
+                    <strong>ExpDate</strong></a>,
                 for expiration date detection and recognition.
                 It contains real-world expiration date images captured from food, beverage, and medical products.
                 It also includes challenging cases with various date scales, different date fonts, reflection,
@@ -165,13 +203,11 @@ cd path/to/exe
                 </figure>
             </a>
 
-            <br>
             <b style="font-size: 20px;">Details</b>
             <p align="justify" style="font-size: 16px;">
-                ExpDate contains a total of 1767 images.
+                ExpDate contains a total of 1767 images which includes near-horizontal expiration dates.
                 We split it into training and test sets consisting of 1102 training and 665 test images, respectively.
                 Additionally, the test set contains 1956 day, month, and year components, unlike the training set.
-                ExpDate has near-horizontal expiration dates in the images.
                 The width and height of the images vary in the range of [482, 2048] and [452, 2298] pixels, respectively.
                 The dates are between the years 2018 and 2026.
                 ExpDate has various types of expiration date fonts, including the dot-matrix font.
