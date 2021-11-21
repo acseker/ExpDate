@@ -106,7 +106,7 @@
                 </figure>
             </a>
 
-            <b style="font-size: 20px;">Executable Files</b>
+            <b style="font-size: 22px;">Executable Files</b>
             <p align="justify" style="font-size: 16px;">
                 We've released
                 <a href="https://drive.google.com/drive/folders/1ch6pOgzInlGOOo3OHyMNJ-OUiHLSF623?usp=sharing">
@@ -118,11 +118,11 @@
                 Anyone who would like to test their own images can use the following instructions.
             </p>
 
-            <b style="font-size: 20px;">Testing Images</b>
+            <b style="font-size: 22px;">Testing Images</b>
              <p align="justify" style="font-size: 16px;">
-                 <strong>Step 1:</strong> Create a folder called <code>images</code>, that contains the test images.
+                 <strong>Step 1:</strong> Create a folder called <code>images_det</code>, that contains the test images.
                 <br>
-                <strong>Step 2:</strong> Place the <code>images</code> folder and all <code>.exe</code> files in the same directory.
+                <strong>Step 2:</strong> Place the <code>images_det</code> folder and all <code>.exe</code> files in the same directory.
                 <br>
                 <strong>Step 3:</strong> Run the following commands for detecting expiration dates.
             </p>
@@ -137,8 +137,8 @@ cd path/to/exe
 
             <p align="justify" style="font-size: 16px;">
                 After running <code>ExpDateDetection.exe</code> file,
-                a folder called <code>detection_results</code> that contains detected expiration dates
-                and a folder called <code>images_recognition</code> that contains the cropped regions of detected expiration dates
+                a folder called <code>results_det</code> that contains detected expiration dates
+                and a folder called <code>images_rec</code> that contains the cropped regions of detected expiration dates,
                 will be created in the same directory as exe files.
                 <br>
                 <strong>Step 4:</strong> Run the following commands for recognizing expiration dates.
@@ -154,11 +154,11 @@ cd path/to/exe
 
             <p align="justify" style="font-size: 16px;">
                 After running <code>ExpDateRecognition.exe</code> file,
-                a folder called <code>recognition_results</code> will be created in the same directory as exe files.
+                a folder called <code>results_rec</code> will be created in the same directory as exe files.
                 It contains recognized expiration dates in a <code>.txt</code> file and day, month, and year detection results.
             </p>
 
-            <b style="font-size: 20px;">Testing Webcam</b>
+            <b style="font-size: 22px;">Testing Webcam</b>
             <p align="justify" style="font-size: 16px;">
                 We also provide an executable file in which you can use your webcam for
                 recognizing and understanding the expiration date in real-time. You use the following instructions
@@ -203,7 +203,7 @@ cd path/to/exe
                 </figure>
             </a>
 
-            <b style="font-size: 20px;">Details</b>
+            <b style="font-size: 22px;">Details</b>
             <p align="justify" style="font-size: 16px;">
                 ExpDate contains a total of 1767 images which includes near-horizontal expiration dates.
                 We split it into training and test sets consisting of 1102 training and 665 test images, respectively.
@@ -255,7 +255,7 @@ cd path/to/exe
             </a>
 
             <br>
-            <b style="font-size: 20px;">Annotation</b>
+            <b style="font-size: 22px;">Annotation</b>
             <p align="justify" style="font-size: 16px;">
                 Each date in the images is annotated with class, bounding box coordinates, date transcription,
                 width, and height of the image in the training set.
