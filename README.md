@@ -3,8 +3,8 @@
 
 **[Paper](https://drive.google.com/file/d/1wTaXGbmXy-fAuInhfUk04ZQ-rZZGfKSV/view?usp=sharing)
 \-
-[Exe](https://drive.google.com/drive/folders/1ch6pOgzInlGOOo3OHyMNJ-OUiHLSF623?usp=sharing)
-\- [Dataset](https://drive.google.com/file/d/1Thq5xMPey9xcV-hg9QnPVbfqFYVCo-ix/view?usp=sharing)**
+[Exe](https://drive.google.com/drive/folders/15bEaQMYmjgJ7LHl2bS-fkKM6mw0iwq1S?usp=sharing)
+\- [Dataset](https://drive.google.com/file/d/15uef7dJjwrIEJEMQ517vNAMstX2j7MPL/view?usp=sharing)**
 
 
 ## Introduction
@@ -36,7 +36,7 @@ is now publicly available for further research.
 
 
 ## Details
-Please check this **[website](https://acseker.github.io/ExpDate/)** for
+Please check this **[website](https://felizang.github.io/expdate/)** for
 more details about executable files and dataset.
 
 
