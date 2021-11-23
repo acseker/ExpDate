@@ -149,7 +149,8 @@ cd path/to/exe
                 After running <code>ExpDateDetection.exe</code> file,
                 a folder called <code>results_det</code> that contains detected expiration dates
                 and a folder called <code>images_rec</code> that contains the cropped regions of detected expiration dates,
-                will be created in the same directory as exe files.
+                will be created in the same directory as exe files. The images in <code>images_rec</code> folder are the
+                input images for <code>ExpDateRecognition.exe</code> file.
                 <br>
                 <strong>Step 4:</strong> Run the following commands for recognizing expiration dates.
             </p>
@@ -165,7 +166,8 @@ cd path/to/exe
             <p align="justify" style="font-size: 16px;">
                 After running <code>ExpDateRecognition.exe</code> file,
                 a folder called <code>results_rec</code> will be created in the same directory as exe files.
-                It contains recognized expiration dates in a <code>.txt</code> file and day, month, and year detection results.
+                It contains the day, month, and year detection results, and recognized expiration dates in a <code>.txt</code>
+                file.
             </p>
 
             <b style="font-size: 22px;">Testing Webcam</b>
