@@ -8,24 +8,24 @@
 
 
 ## Introduction
-This project proposes a generalized framework for recognizing and
+This project proposes a generalized framework for detecting and
 understanding the expiration date of the products. The proposed
 framework can handle challenging expiration date cases and distinguish
-13 different date formats. Moreover, it can accurately detect and
+13 different date formats. Moreover, it can detect and
 recognize expiration dates even when the input image contains multiple
 dates. It generates bounding boxes with predictions in the image.
 
 <figure>
     <div>
-        <img src="figures/figure_1.a.gif" height="350"/> <img src="figures/figure_1.b.gif" height="350"/> <img src="figures/figure_1.c.gif" height="350"/>
+        <img src="figures/figure_2.gif" height="275"/>
     </div>
-    <figcaption style="text-align: center; font-size: 16px;"><strong>Figure 1: </strong> Qualitative results of the expiration date recognition and understanding.</figcaption>
+    <figcaption style="text-align: center; font-size: 16px;"><strong>Figure 1: </strong> Qualitative results of the expiration date understanding.</figcaption>
 </figure>
 
 
 ## Executable files
 We've released executable files of the proposed framework. Anyone
-who would like to test their own images for recognition and
+who would like to test their images for recognition and
 understanding the expiration date can use our demo file. 
 
 
@@ -37,7 +37,7 @@ is now publicly available for further research.
 
 ## Details
 Please check this **[website](https://acseker.github.io/ExpDateWebsite/)** for
-more details about executable files and dataset.
+more details about executable files and the dataset.
 
 
 ## Citation
