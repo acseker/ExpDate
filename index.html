@@ -79,28 +79,53 @@
             <b style="font-size: 30px;">Introduction</b>
             <p align="justify" style="font-size: 16px;">
                 This study proposes a generalized framework for detecting and
-                understanding product expiration dates. The proposed
-                framework can handle challenging expiration date cases and distinguish
-                13 different date formats in Table
-                <a href=#table1> <span style="color: red"><strong>1</strong></span></a>.
-                Moreover, it can detect and understand the expiration dates
-                even when the input image contains multiple dates.
-                Figure <a href=#figure1> <span style="color: red"><strong>1</strong></span></a>
-                shows the results of the understanding expiration date.
+                understanding product expiration dates.
+                Figure <a href=#figure1> <span style="color: red"><strong>1</strong></span></a> shows the overall architecture of the proposed framework.
+                The proposed framework consists of three networks: Date detection, DMY detection, and Recognition networks, sequentially.
+                Given an input image, the date detection network detects the dates and extracts their regions from the entire input image.
+                Then, the DMY detection network identifies and extracts the day, month, and year components from the detected date regions.
+                Later, the recognition network recognizes the characters of the day, month, and year components.
+                Finally, the appropriate date is selected as an expiration date after the recognition of characters.
             </p>
-
 
             <a id="figure1">
                 <figure>
                     <div class="row" style="justify-content: center;">
+                        <div class="row align-items-end">
+                            <div>
+                                <img src="figures/figure_1.jpg" height="150"/>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption style="text-align: center; font-size: 16px;">  <strong>Figure 1: </strong>
+                        Qualitative results of the expiration date recognition and understanding.
+                    </figcaption>
+                </figure>
+            </a>
+
+            <br>
+            <b style="font-size: 22px;">Results</b>
+            <p align="justify" style="font-size: 16px;">
+                The proposed framework can handle challenging expiration date cases and distinguish
+                13 different date formats in Table
+                <a href=#table1> <span style="color: red"><strong>1</strong></span></a>.
+                It can detect and understand the expiration dates
+                even when the input image contains multiple dates.
+                Figure <a href=#figure2> <span style="color: red"><strong>2</strong></span></a>
+                shows the results of the understanding expiration date.
+                Moreover, the proposed framework can detect date, due mark, production mark, and code mark classes.
+            </p>
+
+            <a id="figure2">
+                <figure>
+                    <div class="row" style="justify-content: center;">
                     <div class="row align-items-end">
                         <div>
-                        <img src="figures/figure_1.a.gif" height="350"/> <img src="figures/figure_1.b.gif" height="350"/>
-                            <img src="figures/figure_1.c.gif" height="350"/>
+                        <img src="figures/figure_2.gif" height="350"/>
                         </div>
                     </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;">  <strong>Figure 1: </strong>
+                    <figcaption style="text-align: center; font-size: 16px;">  <strong>Figure 2: </strong>
                         Qualitative results of the expiration date recognition and understanding.
                         <br>
                         <span style="color: green"><strong>Green</strong></span>,
@@ -109,7 +134,7 @@
                         <br>
                         <span style="color: orange"><strong>Orange</strong></span>,
                         <span style="color: purple"><strong>purple</strong></span>,
-                        <span style="color: blue"><strong>blue</strong></span> denote the due, production, and code marks detection, respectively.
+                        <span style="color: blue"><strong>blue</strong></span> denote the due mark, production mark, and code mark detection, respectively.
                     </figcaption>
                 </figure>
             </a>
@@ -192,24 +217,26 @@ cd path/to/exe
                 <a href="https://drive.google.com/file/d/15uef7dJjwrIEJEMQ517vNAMstX2j7MPL/view?usp=sharing">
                     <strong>ExpDate</strong></a>,
                 to detect and understand the expiration dates.
-                Figure <a href=#figure2> <span style="color: red"><strong>2</strong></span></a> visualizes some images in ExpDate.
+                Figure <a href=#figure3> <span style="color: red"><strong>3</strong></span></a> visualizes some images in ExpDate.
                 It contains real-world expiration date images captured from food, beverage, and medical products.
                 It also includes challenging cases with various date scales, different date fonts, reflection,
                 complex backgrounds, etc.
             </p>
 
-            <a id="figure2">
+            <a id="figure3">
                 <figure>
                     <div class="row" style="justify-content: center;">
                         <div class="row align-items-end">
                             <div class="col text-center">
-                                <img height="360" src="figures/figure_2.a.gif"/>
-                                <img height="360" src="figures/figure_2.b.gif"/>
-                                <img height="360" src="figures/figure_2.c.gif"/>
+                                <img height="360" src="figures/figure_3.gif"/>
                             </div>
                         </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;"> <strong>Figure 2: </strong>Expiration date images in ExpDate. </figcaption>
+                    <figcaption style="text-align: center; font-size: 16px;">
+                        <strong>Figure 3: </strong>Expiration date images in ExpDate. It contains challenging date
+                        images such as different font and date formats, multiple dates, etc.
+
+                    </figcaption>
                 </figure>
             </a>
 
@@ -274,12 +301,12 @@ cd path/to/exe
                 Each component is annotated with class, bounding box, and transcription.
                 We utilize the top-left and bottom-right corner coordinates of the bounding boxes.
                 The annotation format is shown in Figure
-                <a href=#figure3> <span style="color: red"><strong>3</strong></span></a>.
+                <a href=#figure4> <span style="color: red"><strong>4</strong></span></a>.
             </p>
 
 
             <br>
-            <a id="figure3">
+            <a id="figure4">
                 <figure>
                     <div class="row" style="justify-content: center;">
                         <div class="row align-items-end">
@@ -293,7 +320,7 @@ cd path/to/exe
                             </div>
                         </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;"> <strong>Figure 3: </strong> Annotation format for images.
+                    <figcaption style="text-align: center; font-size: 16px;"> <strong>Figure 4: </strong> Annotation format for images.
                         <strong>(a)</strong> Training set annotations. <strong>(b)</strong> Test set annotations.</figcaption>
                 </figure>
             </a>
