@@ -156,7 +156,7 @@
              <p align="justify" style="font-size: 16px;">
                  <strong>Step 1:</strong> Create a folder named <code>images_det</code> that contains the test images.
                 <br>
-                <strong>Step 2:</strong> Place the <code>images_det</code> folder and all <code>.exe</code> files in the same directory.
+                <strong>Step 2:</strong> Place <code>images_det</code> folder and all <code>.exe</code> files in the same directory.
                 <br>
                 <strong>Step 3:</strong> Run the following commands for detecting the dates.
             </p>
@@ -175,6 +175,10 @@ cd path/to/exe
                 and a folder named <code>images_rec</code> containing the cropped regions of detected dates,
                 will be created in the same directory as executable files. The images in <code>images_rec</code> folder are the
                 input images for the <code>run_recognition.exe</code> file.
+                Noting that, the <code>images_rec</code> folder also contains a <code>cropped_img_list.json</code> file
+                that includes the list of cropped images for an input image for detection network.
+                If you would like to use the recognition network independent from the results of
+                <code>run_detection.exe</code>, just remove the <code>cropped_img_list.json</code> file.
                 <br>
                 <br>
                 <strong>Step 4:</strong> Run the following commands for understanding the dates.
