@@ -79,9 +79,9 @@
             <b style="font-size: 30px;">Introduction</b>
             <p align="justify" style="font-size: 16px;">
                 This study proposes a generalized framework for detecting and
-                understanding expiration dates on the products. The proposed
+                understanding product expiration dates. The proposed
                 framework can handle challenging expiration date cases and distinguish
-                13 different date formats shown in Table
+                13 different date formats in Table
                 <a href=#table1> <span style="color: red"><strong>1</strong></span></a>.
                 Moreover, it can detect and understand the expiration dates
                 even when the input image contains multiple dates.
@@ -105,11 +105,11 @@
                         <br>
                         <span style="color: green"><strong>Green</strong></span>,
                         <span style="color: dodgerblue"><strong>cyan</strong></span>,
-                        <span style="color: red"><strong>red</strong></span> denotes the day, month, and year detection, respectively.
+                        <span style="color: red"><strong>red</strong></span> denote the day, month, and year detection, respectively.
                         <br>
                         <span style="color: orange"><strong>Orange</strong></span>,
                         <span style="color: purple"><strong>purple</strong></span>,
-                        <span style="color: blue"><strong>blue</strong></span> denotes the due, production, and code marks detection, respectively.
+                        <span style="color: blue"><strong>blue</strong></span> denote the due, production, and code marks detection, respectively.
 
                     </figcaption>
                 </figure>
@@ -121,7 +121,7 @@
                 We've released
                 <a href="https://drive.google.com/drive/folders/15bEaQMYmjgJ7LHl2bS-fkKM6mw0iwq1S?usp=sharing">
                     <strong>executable</strong></a>
-                files of the proposed framework for both windows and ubuntu operating systems.
+                files of the proposed framework for Windows and Ubuntu operating systems.
                 To see the detection and understanding results separately, we divided the proposed framework into
                 two executable files as <code>run_detection.exe</code> for detecting date
                 and <code>run_recognition.exe</code> for understanding the detected dates.
@@ -130,7 +130,7 @@
 
             <b style="font-size: 22px;">Testing Images</b>
              <p align="justify" style="font-size: 16px;">
-                 <strong>Step 1:</strong> Create a folder named <code>images_det</code>, that contains the test images.
+                 <strong>Step 1:</strong> Create a folder named <code>images_det</code> that contains the test images.
                 <br>
                 <strong>Step 2:</strong> Place the <code>images_det</code> folder and all <code>.exe</code> files in the same directory.
                 <br>
@@ -146,11 +146,11 @@ cd path/to/exe
 ./run_detection</code></pre>
 
             <p align="justify" style="font-size: 16px;">
-                After running <code>run_detection.exe</code> file,
-                a folder named <code>results_det</code> that contains the detected dates
-                and a folder named <code>images_rec</code> that contains the cropped regions of detected dates,
-                will be created in the same directory as exe files. The images in <code>images_rec</code> folder are the
-                input images for <code>run_recognition.exe</code> file.
+                After running the <code>run_detection.exe</code> file,
+                a folder named <code>results_det</code> containing the detected dates
+                and a folder named <code>images_rec</code> containing the cropped regions of detected dates,
+                will be created in the same directory as executable files. The images in <code>images_rec</code> folder are the
+                input images for the <code>run_recognition.exe</code> file.
                 <br>
                 <br>
                 <strong>Step 4:</strong> Run the following commands for understanding the dates.
@@ -165,9 +165,9 @@ cd path/to/exe
 ./run_recognition</code></pre>
 
             <p align="justify" style="font-size: 16px;">
-                After running <code>run_recognition.exe</code> file,
-                a folder named <code>results_rec</code> will be created in the same directory as exe files.
-                It contains the day, month, and year detection results, and the recognized expiration dates with the meaning in a <code>.txt</code>
+                After running the <code>run_recognition.exe</code> file,
+                a folder named <code>results_rec</code> will be created in the same directory as executable files.
+                It contains the day, month, and year detection results and the recognized expiration dates with the meaning in a <code>.txt</code>
                 file.
             </p>
 
@@ -192,11 +192,11 @@ cd path/to/exe
                 In the lack of a publicly available dataset, we create a novel dataset,
                 <a href="https://drive.google.com/file/d/15uef7dJjwrIEJEMQ517vNAMstX2j7MPL/view?usp=sharing">
                     <strong>ExpDate</strong></a>,
-                for detecting and understanding the expiration dates.
+                to detect and understand the expiration dates.
+                Figure <a href=#figure2> <span style="color: red"><strong>2</strong></span></a> visualizes some images in ExpDate.
                 It contains real-world expiration date images captured from food, beverage, and medical products.
                 It also includes challenging cases with various date scales, different date fonts, reflection,
                 complex backgrounds, etc.
-                Figure <a href=#figure2> <span style="color: red"><strong>2</strong></span></a> visualizes some images in ExpDate.
             </p>
 
 
@@ -219,8 +219,8 @@ cd path/to/exe
             <b style="font-size: 22px;">Details</b>
             <p align="justify" style="font-size: 16px;">
                 ExpDate contains a total of 1767 images which includes near-horizontal expiration dates.
-                We split it into training and test sets consisting of 1102 training and 665 test images, respectively.
-                Additionally, the test set contains 1956 day, month, and year components, unlike the training set.
+                We split it into training and test sets consisting of 1102 and 665 images, respectively.
+                Unlike the training set, the test set contains 1956 day, month, and year components.
                 The width and height of the images vary in the range of [452, 2298] pixels, respectively.
                 The dates are between the years 2018 and 2026.
                 ExpDate has various types of expiration date fonts, including the dot-matrix font.
@@ -272,8 +272,8 @@ cd path/to/exe
             <p align="justify" style="font-size: 16px;">
                 Each date in the images is annotated with class, bounding box coordinates, date transcription,
                 width, and height of the image in the training set.
-                The test set contains the annotations of the day, month, and year components
-                in addition to date annotation, unlike the training set.
+                Unlike the training set, the test set contains the annotations of the day, month, and year components
+                in addition to date annotation.
                 Each component is annotated with class, bounding box, and transcription.
                 We utilize the top-left and bottom-right corner coordinates of the bounding boxes.
                 The annotation format is shown in Figure
