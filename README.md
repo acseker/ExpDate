@@ -36,7 +36,7 @@ is now publicly available for further research.
 
 
 ## Details
-Please check this **[website](https://acseker.github.io/ExpDateWebsite/)** for
+Please check the **[project page](https://acseker.github.io/ExpDateWebsite/)** for
 more details about executable files and the dataset.
 
 
