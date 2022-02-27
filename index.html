@@ -3,27 +3,41 @@
 
     <head>
         <!-- Required meta tags -->
-        <meta charset="utf-8">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=yes">
+
+        <title>ExpDate: Expiration Date Dataset</title>
+        <meta name="keywords" content="Expiration date dataset, expiration, expiry, due date"/>
+        <meta name="description" content="ExpDate provides expiration date images dataset."/>
+
+        <link rel="canonical" href="https://acseker.github.io/ExpDateWebsite/">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://acseker.github.io/ExpDateWebsite/"/>
+        <meta property="og:title" content="ExpDate: Expiration Date Dataset"/>
+        <meta property="og:description" content="ExpDate provides expiration date images dataset."/>
+        <meta property="og:image" content="https://github.com/acseker/ExpDateWebsite/blob/main/images/img_01.jpg?raw=true"/>
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://acseker.github.io/ExpDateWebsite/"/>
+        <meta property="twitter:title" content="ExpDate: Expiration Date Dataset"/>
+        <meta property="twitter:description" content="ExpDate provides expiration date images dataset."/>
+        <meta property="twitter:image" content="https://github.com/acseker/ExpDateWebsite/blob/main/images/img_01.jpg?raw=true"/>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
-
         <link rel="stylesheet" href="styles.css">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
-
-        <title>ExpDate: Expiration Date Dataset</title>
 
     </head>
 
-    <body style="font-family: Arial; margin-bottom: 5vw; overflow-x: hidden;">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
-
-
+    <body>
+        <!-- Sliding images -->
         <div id="container" style="width:100vw; background: #9b2226;">
             <div class="photobanner">
                 <img src="images/img_01.jpg" height="250"/>
@@ -45,17 +59,20 @@
             </div>
         </div>
 
-        <div style="margin-left: 20vw; margin-right: 20vw; margin-top: 6vh;">
+        <!-- Page entrance-->
+        <div class="page">
+
+            <!-- Title -->
             <center>
-                <b style="text-align:center; font-size: 30px;">
+                <b class="title-style">
                     A Generalized Framework for<br>
                     Recognition of Expiration Date on Product Packages <br>
                     Using Fully Convolutional Networks</b>
             </center>
 
-
+            <!-- Paper, exe, and dataset icons -->
             <br>
-            <div class="row" style="justify-content: center; font-size: 16px;">
+            <div class="row icons">
                 <div class="row align-items-end">
                     <div class="col text-center">
                         <a href="https://drive.google.com/file/d/1wTaXGbmXy-fAuInhfUk04ZQ-rZZGfKSV/view?usp=sharing">
@@ -75,9 +92,10 @@
                 </div>
             </div>
 
+            <!-- Introduction section -->
             <br>
-            <b style="font-size: 30px;">Introduction</b>
-            <p align="justify" style="font-size: 16px;">
+            <h4> <b> Introduction </b> </h4>
+            <p class="text">
                 This study proposes a generalized framework for detecting and
                 understanding product expiration dates.
                 Figure <a href=#figure1> <span style="color: red"><strong>1</strong></span></a> shows the overall architecture of the proposed framework.
@@ -103,9 +121,10 @@
                 </figure>
             </a>
 
+            <!-- Results section -->
             <br>
-            <b style="font-size: 22px;">Results</b>
-            <p align="justify" style="font-size: 16px;">
+            <h4> <b> Results </b> </h4>
+            <p class="text">
                 The proposed framework can handle challenging expiration date cases and distinguish
                 13 different date formats in Table
                 <a href=#table1> <span style="color: red"><strong>1</strong></span></a>.
@@ -139,9 +158,9 @@
                 </figure>
             </a>
 
-
-            <b style="font-size: 22px;">Executable Files</b>
-            <p align="justify" style="font-size: 16px;">
+            <!-- Executable Files section -->
+            <h4> <b> Executable Files </b> </h4>
+            <p class="text">
                 We've released
                 <a href="https://drive.google.com/drive/folders/15bEaQMYmjgJ7LHl2bS-fkKM6mw0iwq1S?usp=sharing">
                     <strong>executable</strong></a>
@@ -152,8 +171,9 @@
                 Anyone who would like to test their images can use the following instructions.
             </p>
 
-            <b style="font-size: 22px;">Testing Images</b>
-             <p align="justify" style="font-size: 16px;">
+            <!-- Testing Images section -->
+            <h4> <b> Testing Images </b> </h4>
+             <p class="text">
                  <strong>Step 1:</strong> Create a folder named <code>images_det</code> that contains the test images.
                 <br>
                 <strong>Step 2:</strong> Place <code>images_det</code> folder and all <code>.exe</code> files in the same directory.
@@ -199,8 +219,9 @@ cd path/to/exe
                 with the meaning in a <code>.txt</code> file.
             </p>
 
-            <b style="font-size: 22px;">Testing Webcam</b>
-            <p align="justify" style="font-size: 16px;">
+            <!-- Testing Webcam section -->
+            <h4> <b> Testing Webcam </b> </h4>
+            <p class="text">
                 We also provide an executable file in which you can use your webcam for
                 detecting and understanding the expiration date in real-time. You can use the following instructions
                 to use your webcam.
@@ -223,11 +244,12 @@ cd path/to/exe
                 </video>
             </div>
 
+            <!-- ExpDate: Expiration Date Dataset -->
             <br>
             <center>
-                <b style="text-align:center; font-size: 30px;">ExpDate:<br>Expiration Date Dataset</b>
+                <b class="title-style">ExpDate: Expiration Date Dataset</b>
             </center>
-            <p align="justify" style="font-size: 16px;">
+            <p class="text">
                 In the lack of a publicly available dataset, we create a novel dataset,
                 <a href="https://drive.google.com/drive/folders/1YuxWzVj6bT6gs6XlewEGetYrdgwZt7EH?usp=sharing">
                     <strong>ExpDate</strong></a>,
@@ -254,8 +276,9 @@ cd path/to/exe
                 </figure>
             </a>
 
-            <b style="font-size: 22px;">Details</b>
-            <p align="justify" style="font-size: 16px;">
+            <!-- Details -->
+            <h4> <b> Details </b> </h4>
+            <p class="text">
                 ExpDate contains a total of 1767 images which includes near-horizontal expiration dates.
                 We split it into training and test sets consisting of 1102 and 665 images, respectively.
                 Unlike the training set, the test set contains 1956 day, month, and year components.
@@ -305,9 +328,10 @@ cd path/to/exe
                 </table>
             </a>
 
+            <!-- Annotation -->
             <br>
-            <b style="font-size: 22px;">Annotation</b>
-            <p align="justify" style="font-size: 16px;">
+            <h4> <b> Annotation </b> </h4>
+            <p class="text">
                 Each date in the images is annotated with class, bounding box coordinates, date transcription,
                 width, and height of the image in the training set.
                 Unlike the training set, the test set contains the annotations of the day, month, and year components
@@ -315,7 +339,7 @@ cd path/to/exe
                 Each component is annotated with class, bounding box, and transcription.
                 We utilize the top-left and bottom-right corner coordinates of the bounding boxes.
                 The annotation format is shown in Figure
-                <a href=#figure4> <span style="color: red"><strong>4</strong></span></a>.
+                <a href=#figure4> <span style="color: red"><b>4</b></span></a>.
             </p>
 
 
@@ -339,9 +363,10 @@ cd path/to/exe
                 </figure>
             </a>
 
+            <!-- Citation -->
             <br>
-            <b style="font-size: 30px;">Citation</b>
-            <p align="justify" style="font-size: 16px;">
+            <h4> <b> Citation </b> </h4>
+            <p class="text">
                 If you find this study useful for your research, please cite:
             </p>
 
@@ -351,9 +376,13 @@ cd path/to/exe
       author={Seker, Ahmet Cagatay and Ahn, Sang Chul},
       booktitle={-},
       pages={-},
-      year={-}
+      year={2022}
   }</pre>
         </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+
     </body>
 </html>
 
