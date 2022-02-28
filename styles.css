@@ -11,7 +11,7 @@
 }
 
 .title-style {
-    text-align:center;
+    text-align: center;
     font-size: 30px;
 }
 
@@ -25,10 +25,7 @@
     text-align: justify;
 }
 
-
-
 table {
-  class="center"
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 65%;
@@ -79,10 +76,19 @@ tr:nth-child(odd) {
   100% {transform: translate(-50%);}
 }
 
-code {
+.word {
   font-family: Consolas,"courier new";
   color: black;
   background-color: #f1f1f1;
   padding: 2px;
   font-size: 90%;
+}
+
+.fig-style {
+  justify-content: center;
+}
+
+.fig-caption {
+  text-align: center; 
+  font-size: 16px;
 }

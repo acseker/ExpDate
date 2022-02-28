@@ -63,12 +63,11 @@
         <div class="page">
 
             <!-- Title -->
-            <center>
-                <b class="title-style">
-                    A Generalized Framework for<br>
-                    Recognition of Expiration Date on Product Packages <br>
-                    Using Fully Convolutional Networks</b>
-            </center>
+            <h1 class="title-style"> <b>
+                A Generalized Framework for<br>
+                Recognition of Expiration Date on Product Packages <br>
+                Using Fully Convolutional Networks</b>
+            </h1>
 
             <!-- Paper, exe, and dataset icons -->
             <br>
@@ -92,7 +91,7 @@
                 </div>
             </div>
 
-            <!-- Introduction section -->
+            <!-- Introduction Section -->
             <br>
             <h4> <b> Introduction </b> </h4>
             <p class="text">
@@ -106,22 +105,24 @@
                 Finally, the appropriate date is selected as an expiration date after the recognition of characters.
             </p>
 
+            <!-- Figure-1 -->
+            <br>
             <a id="figure1">
                 <figure>
-                    <div class="row" style="justify-content: center;">
+                    <div class="row fig-style">
                         <div class="row align-items-end">
                             <div>
                                 <img src="figures/figure_1.jpg" height="150"/>
                             </div>
                         </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;">  <strong>Figure 1: </strong>
+                    <figcaption class="fig-caption">  <strong>Figure 1: </strong>
                         The overall architecture of the proposed framework for expiration date detection and understanding.
                     </figcaption>
                 </figure>
             </a>
 
-            <!-- Results section -->
+            <!-- Results Section -->
             <br>
             <h4> <b> Results </b> </h4>
             <p class="text">
@@ -134,17 +135,19 @@
                 shows the results of the understanding expiration date.
                 Moreover, the proposed framework can detect date, due mark, production mark, and code mark classes.
             </p>
-
+            
+            <!-- Figure-2 -->
+            <br>
             <a id="figure2">
                 <figure>
-                    <div class="row" style="justify-content: center;">
+                    <div class="row fig-style">
                     <div class="row align-items-end">
                         <div>
                         <img src="figures/figure_2.gif" height="350"/>
                         </div>
                     </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;">  <strong>Figure 2: </strong>
+                    <figcaption class="fig-caption">  <strong>Figure 2: </strong>
                         Qualitative results of the expiration date recognition and understanding.
                         <br>
                         <span style="color: green"><strong>Green</strong></span>,
@@ -158,7 +161,8 @@
                 </figure>
             </a>
 
-            <!-- Executable Files section -->
+            <!-- Executable Files Section -->
+            <br>
             <h4> <b> Executable Files </b> </h4>
             <p class="text">
                 We've released
@@ -166,17 +170,17 @@
                     <strong>executable</strong></a>
                 files of the proposed framework for Windows and Ubuntu operating systems.
                 To see the detection and understanding results separately, we divided the proposed framework into
-                two executable files as <code>run_detection.exe</code> for detecting date
-                and <code>run_recognition.exe</code> for understanding the detected dates.
+                two executable files as <code class="word">run_detection.exe</code> for detecting date
+                and <code class="word">run_recognition.exe</code> for understanding the detected dates.
                 Anyone who would like to test their images can use the following instructions.
             </p>
 
-            <!-- Testing Images section -->
+            <!-- Testing Images Section -->
             <h4> <b> Testing Images </b> </h4>
              <p class="text">
-                 <strong>Step 1:</strong> Create a folder named <code>images_det</code> that contains the test images.
+                 <strong>Step 1:</strong> Create a folder named <code class="word">images_det</code> that contains the test images.
                 <br>
-                <strong>Step 2:</strong> Place <code>images_det</code> folder and all <code>.exe</code> files in the same directory.
+                <strong>Step 2:</strong> Place <code class="word">images_det</code> folder and all <code class="word">.exe</code> files in the same directory.
                 <br>
                 <strong>Step 3:</strong> Run the following commands for detecting the dates.
             </p>
@@ -189,16 +193,16 @@ run_detection.exe
 cd path/to/exe
 ./run_detection</code></pre>
 
-            <p align="justify" style="font-size: 16px;">
-                After running the <code>run_detection.exe</code> file,
-                a folder named <code>results_det</code> containing the detected dates
-                and a folder named <code>images_rec</code> containing the cropped regions of detected dates,
-                will be created in the same directory as executable files. The images in <code>images_rec</code> folder are the
-                input images for the <code>run_recognition.exe</code> file.
-                Noting that, the <code>images_rec</code> folder also contains a <code>cropped_img_list.json</code> file
+            <p class="text">
+                After running the <code class="word">run_detection.exe</code> file,
+                a folder named <code class="word">results_det</code> containing the detected dates
+                and a folder named <code class="word">images_rec</code> containing the cropped regions of detected dates,
+                will be created in the same directory as executable files. The images in <code class="word">images_rec</code> folder are the
+                input images for the <code class="word">run_recognition.exe</code> file.
+                Noting that, the <code class="word">images_rec</code> folder also contains a <code class="word">cropped_img_list.json</code> file
                 that includes the list of cropped images for an input image for detection network.
-                If you would like to use the <code>run_recognition.exe</code> file independent from the results of
-                <code>run_detection.exe</code>, just remove the <code>cropped_img_list.json</code> file before running it.
+                If you would like to use the <code class="word">run_recognition.exe</code> file independent from the results of
+                <code class="word">run_detection.exe</code>, just remove the <code class="word">cropped_img_list.json</code> file before running it.
                 <br>
                 <br>
                 <strong>Step 4:</strong> Run the following commands for understanding the dates.
@@ -212,14 +216,14 @@ run_recognition.exe
 cd path/to/exe
 ./run_recognition</code></pre>
 
-            <p align="justify" style="font-size: 16px;">
-                After running the <code>run_recognition.exe</code> file,
-                a folder named <code>results_rec</code> will be created in the same directory as executable files.
+            <p class="text">
+                After running the <code class="word">run_recognition.exe</code> file,
+                a folder named <code class="word">results_rec</code> will be created in the same directory as executable files.
                 It contains the day, month, and year detection results and the recognized expiration dates
-                with the meaning in a <code>.txt</code> file.
+                with the meaning in a <code class="word">.txt</code> file.
             </p>
 
-            <!-- Testing Webcam section -->
+            <!-- Testing Webcam Section -->
             <h4> <b> Testing Webcam </b> </h4>
             <p class="text">
                 We also provide an executable file in which you can use your webcam for
@@ -235,7 +239,9 @@ run_webcam.exe
 cd path/to/exe
 ./run_webcam</code></pre>
 
-            <div style="text-align:center">
+            <!-- Webcam Video -->
+            <br>
+            <div class="col text-center">
                 <h5><strong>Webcam Video</strong></h5>
                 <video width="540" controls>
                     <source src="figures/webcam.mp4" type="video/mp4">
@@ -244,11 +250,14 @@ cd path/to/exe
                 </video>
             </div>
 
+
             <!-- ExpDate: Expiration Date Dataset -->
+            <br><br>
+            <h1 class="title-style">
+                <b> ExpDate: Expiration Date Dataset </b>
+            </h1>
+
             <br>
-            <center>
-                <b class="title-style">ExpDate: Expiration Date Dataset</b>
-            </center>
             <p class="text">
                 In the lack of a publicly available dataset, we create a novel dataset,
                 <a href="https://drive.google.com/drive/folders/1YuxWzVj6bT6gs6XlewEGetYrdgwZt7EH?usp=sharing">
@@ -260,23 +269,26 @@ cd path/to/exe
                 complex backgrounds, etc.
             </p>
 
+            <!-- Figure-3 -->
+            <br>
             <a id="figure3">
                 <figure>
-                    <div class="row" style="justify-content: center;">
+                    <div class="row fig-style">
                         <div class="row align-items-end">
                             <div class="col text-center">
                                 <img height="360" src="figures/figure_3.gif"/>
                             </div>
                         </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;">
+                    <figcaption class="fig-caption">
                         <strong>Figure 3: </strong>Expiration date images in ExpDate. It contains challenging date
                         images such as different font and date formats, multiple dates, etc.
                     </figcaption>
                 </figure>
             </a>
 
-            <!-- Details -->
+            <!-- Details Section -->
+            <br>
             <h4> <b> Details </b> </h4>
             <p class="text">
                 ExpDate contains a total of 1767 images which includes near-horizontal expiration dates.
@@ -290,6 +302,8 @@ cd path/to/exe
                 <a href=#table1> <span style="color: red"><strong>1</strong></span></a>.
             </p>
 
+            <!-- Table-1 -->
+            <br>
             <a id="table1">
                 <table class="center" style="font-size: 16px;">
                     <caption> <strong>Table 1:</strong> Expiration date formats used in ExpDate.</caption>
@@ -328,7 +342,7 @@ cd path/to/exe
                 </table>
             </a>
 
-            <!-- Annotation -->
+            <!-- Annotation Section -->
             <br>
             <h4> <b> Annotation </b> </h4>
             <p class="text">
@@ -342,11 +356,11 @@ cd path/to/exe
                 <a href=#figure4> <span style="color: red"><b>4</b></span></a>.
             </p>
 
-
+            <!-- Figure-4 -->
             <br>
             <a id="figure4">
                 <figure>
-                    <div class="row" style="justify-content: center;">
+                    <div class="row fig-style">
                         <div class="row align-items-end">
                             <div class="col text-center">
                                 <img width="250" src="figures/annotation_tr.png"/>
@@ -358,12 +372,13 @@ cd path/to/exe
                             </div>
                         </div>
                     </div>
-                    <figcaption style="text-align: center; font-size: 16px;"> <strong>Figure 4: </strong> Annotation format for images.
+                    <figcaption class="fig-caption"> <strong>Figure 4: </strong> Annotation format for images.
                         <strong>(a)</strong> Training set annotations. <strong>(b)</strong> Test set annotations.</figcaption>
                 </figure>
             </a>
 
-            <!-- Citation -->
+
+            <!-- Citation Section -->
             <br>
             <h4> <b> Citation </b> </h4>
             <p class="text">
@@ -380,9 +395,7 @@ cd path/to/exe
   }</pre>
         </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
     </body>
 </html>
 
