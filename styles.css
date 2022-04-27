@@ -14,7 +14,7 @@
 
 .title-style {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .icons {
@@ -99,4 +99,8 @@ tr:nth-child(odd) {
 pre {
     width: 100%;
     background-color: #f1f1f1;
+}
+
+h6 {
+    color: black;
 }
