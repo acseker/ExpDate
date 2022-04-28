@@ -60,7 +60,7 @@ tr:nth-child(odd) {
 
 #container {
   height:300px;
-  width:100%;
+  width:100vw;
   background: #9b2226;
   position:relative;
   overflow:hidden;
