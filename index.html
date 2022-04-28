@@ -5,7 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>ExpDate: Expiration Date Dataset</title>
         <meta name="keywords" content="Expiration date dataset, expiration, expiry, due date"/>
@@ -38,26 +38,27 @@
 
     <body>
         <!-- Sliding images -->
-        <div id="container">
-            <div class="photobanner">
-                <img src="images/img_01.jpg" height="250"/>
-                <img src="images/img_02.jpg" height="250"/>
-                <img src="images/img_03.jpg" height="250"/>
-                <img src="images/img_04.jpg" height="250"/>
-                <img src="images/img_05.jpg" height="250"/>
-                <img src="images/img_06.jpg" height="250"/>
-                <img src="images/img_07.jpg" height="250"/>
-                <img src="images/img_08.jpg" height="250"/>
-                <img src="images/img_01.jpg" height="250"/>
-                <img src="images/img_02.jpg" height="250"/>
-                <img src="images/img_03.jpg" height="250"/>
-                <img src="images/img_04.jpg" height="250"/>
-                <img src="images/img_05.jpg" height="250"/>
-                <img src="images/img_06.jpg" height="250"/>
-                <img src="images/img_07.jpg" height="250"/>
-                <img src="images/img_08.jpg" height="250"/>
-            </div>
-        </div>
+<!--        <div id="container-photobanner">-->
+<!--            <div class="photobanner">-->
+<!--                <img src="images/img_01.jpg" height="250"/>-->
+<!--                <img src="images/img_02.jpg" height="250"/>-->
+<!--                <img src="images/img_03.jpg" height="250"/>-->
+<!--                <img src="images/img_04.jpg" height="250"/>-->
+<!--                <img src="images/img_05.jpg" height="250"/>-->
+<!--                <img src="images/img_06.jpg" height="250"/>-->
+<!--                <img src="images/img_07.jpg" height="250"/>-->
+<!--                <img src="images/img_08.jpg" height="250"/>-->
+<!--                <img src="images/img_01.jpg" height="250"/>-->
+<!--                <img src="images/img_02.jpg" height="250"/>-->
+<!--                <img src="images/img_03.jpg" height="250"/>-->
+<!--                <img src="images/img_04.jpg" height="250"/>-->
+<!--                <img src="images/img_05.jpg" height="250"/>-->
+<!--                <img src="images/img_06.jpg" height="250"/>-->
+<!--                <img src="images/img_07.jpg" height="250"/>-->
+<!--                <img src="images/img_08.jpg" height="250"/>-->
+
+<!--            </div>-->
+<!--        </div>-->
 
         <!-- Page entrance-->
         <div class="page">
@@ -323,7 +324,6 @@ cd path/to/exe
                 to train the DMY detection network, containing 128k images with a synthetic date.
                 A test dataset, <b>Date-Real</b>, was constructed for evaluation.
 
-                <br><br>
                 For the recognition task, a novel dataset, <b>Components-Synth</b>, was collected
                 by generating 450k training images with synthetic date components.
                 The components of the dates in Date-Real were used to create a new dataset named
@@ -388,10 +388,9 @@ cd path/to/exe
                 with class, bounding box coordinates, date transcription, image width, and height.
                 There are four classes defined: date, due, prod, and code in the training sets.
                 Expiration dates in the test set of Product-Real
-                are specifically labeled as "exp-date" class for easy evaluation,
+                are specifically labeled as "exp" class for easy evaluation,
                 unlike the training set of Product-Real.
 
-                <br><br>
                 Each component in the Date-Real and Date-Synth datasets is annotated with class,
                 bounding box, and transcription. The day, month, and year are used as the classes
                 for each component of the dates.
