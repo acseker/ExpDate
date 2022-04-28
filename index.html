@@ -278,7 +278,7 @@ cd path/to/exe
             <br>
             <h4> <b> Introduction </b> </h4>
             <p class="text">
-                In the lack of a publicly available dataset, we created six novel datasets
+                In the lack of a publicly available dataset, we built six novel datasets
                 to detect and understand the expiration dates.
                 The collection of these datasets is named
                 <a href="https://drive.google.com/drive/folders/1YuxWzVj6bT6gs6XlewEGetYrdgwZt7EH?usp=sharing">
@@ -299,7 +299,7 @@ cd path/to/exe
                         </div>
                     </div>
                     <figcaption class="fig-caption">
-                        <b>Figure 3: </b>Expiration date images in Products-Real. It contains challenging date
+                        <b>Figure 3: </b>Expiration date images in ExpDate. It contains challenging date
                         images such as different font and date formats, multiple dates, etc.
                     </figcaption>
                 </figure>
@@ -309,30 +309,30 @@ cd path/to/exe
             <br>
             <h4> <b> Details </b> </h4>
             <p class="text">
-                For date detection task, a novel expiration date dataset, <b>Products-Real</b>, was created
+                For the date detection task, a novel expiration date dataset, <b>Products-Real</b>, was created
                 by capturing 1767 real-world images with near-horizontal dates
                 from food, beverage, and medicine products.
                 It is split into training and test sets consisting of 1102 and 665 images.
                 Additionally, around 12k product images with synthetic dates were generated
                 to obtain various and challenging date samples.
-                This synthetic dataset is called as <b>Products-Synth</b> and used only for training.
-                Figure <a href=#figure3> <span style="color: red"><b>3</b></span></a> visualizes
-                some date images from (a) Products-Real and (b) Products-Synth datasets.
+                This synthetic dataset is called as <b>Products-Synth</b> and is used only for training.
 
                 <br><br>
                 To parse the dates into one of the date formats,
                 another novel dataset named <b>Date-Synth</b> was created
-                for training the DMY detection network, which contains 128k images with synthetic date region.
-                A test dataset, <b>Date-Real</b>, was constructed for evaluation,
+                to train the DMY detection network, containing 128k images with a synthetic date.
+                A test dataset, <b>Date-Real</b>, was constructed for evaluation.
 
                 <br><br>
-                For recognition task, a novel dataset, <b>Components-Synth</b>, was collected
+                For the recognition task, a novel dataset, <b>Components-Synth</b>, was collected
                 by generating 450k training images with synthetic date components.
                 The components of the dates in Date-Real were used to create a new dataset named
                 <b>Components-Real</b> for the evaluation of the recognition task.
+                Figure <a href=#figure3> <span style="color: red"><b>3</b></span></a> visualizes
+                some images from ExpDate dataset.
 
                 <br><br>
-                Eventually, ExpDate consists of six different datasets, containing real and synthetic images.
+                Eventually, ExpDate consists of six different datasets containing real and synthetic images.
                 It includes challenging cases with various date scales, different date fonts
                 (including the dot-matrix), reflection, complex backgrounds, etc.
                 Additionally, it contains images with multiple dates on the products (i.e., expiration and production dates).
@@ -385,43 +385,19 @@ cd path/to/exe
             <h4> <b> Annotation </b> </h4>
             <p class="text">
                 Each date in the Products-Real and Products-Synth datasets is annotated
-                with class, bounding box coordinates, date transcription, width, and height of the image.
-                There are four classes defined: date, due, prod, code in the training sets.
+                with class, bounding box coordinates, date transcription, image width, and height.
+                There are four classes defined: date, due, prod, and code in the training sets.
                 Expiration dates in the test set of Product-Real
-                is specifically labeled as "exp-date" class for easy evaluation
+                are specifically labeled as "exp-date" class for easy evaluation,
                 unlike the training set of Product-Real.
 
                 <br><br>
                 Each component in the Date-Real and Date-Synth datasets is annotated with class,
                 bounding box, and transcription. The day, month, and year are used as the classes
                 for each component of the dates.
-                Moreover, Components-Real and Components-Synth datasets consists of the components of
+                Moreover, Components-Real and Components-Synth datasets consist of the components of
                 the day, month, and year and their transcriptions.
-                The annotation formats are shown in Figure
-                <a href=#figure4> <span style="color: red"><b>4</b></span></a>.
             </p>
-
-            <!-- Figure-4 -->
-            <br>
-            <a id="figure4">
-                <figure>
-                    <div class="row fig-style">
-                        <div class="row align-items-end">
-                            <div class="col text-center">
-                                <img width="250" src="figures/annotation_tr.png"/>
-                                <h5><b>(a)</b></h5>
-                            </div>
-                            <div class="col text-center">
-                                <img width="275" src="figures/annotation_eval.png"/>
-                                <h5><b>(b)</b></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <figcaption class="fig-caption"> <strong>Figure 4: </strong> Annotation format for images.
-                        <strong>(a)</strong> Training set annotations. <strong>(b)</strong> Test set annotations.</figcaption>
-                </figure>
-            </a>
-
 
             <!-- Citation Section -->
             <br>
