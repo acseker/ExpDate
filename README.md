@@ -31,7 +31,7 @@ understanding the expiration date can use our demo file.
 
 ## Dataset
 In the lack of a publicly available dataset, we create a novel dataset,
-ExpDate, consisting of 1767 real-world images with expiration dates. It
+ExpDate, consisting of date images with challenging cases. It
 is now publicly available for further research.  
 
 
