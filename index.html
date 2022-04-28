@@ -68,19 +68,23 @@
                 Using Fully Convolutional Networks
             </h1>
 
-            <p class="center_text" align="center" >
-                <a target="_blank"
-                   href="">Ahmet Cagatay Seker</a><sup>1, 2</sup>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a target="_blank"
-                   href="">Sang Chul Ahn</a><sup>1, 2</sup>
-            </p>
+            <b>
+                <p class="center_text" align="center" >
+                    <a target="_blank"
+                       href="">Ahmet Cagatay Seker</a><sup>1, 2</sup>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank"
+                       href="">Sang Chul Ahn</a><sup>1, 2</sup>
+                </p>
+            </b>
 
-            <p class="center_text" align="center">
-                <sup>1</sup>University of Science and Technology
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <sup>2</sup>Korea Institute of Science and Technology
-            </p>
+            <b>
+                <p class="center_text" align="center">
+                    <sup>1</sup>University of Science and Technology
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <sup>2</sup>Korea Institute of Science and Technology
+                </p>
+            </b>
 
             <!-- Paper, exe, and dataset icons -->
             <br>
@@ -268,7 +272,7 @@ cd path/to/exe
             <!-- ExpDate: Expiration Date Dataset -->
             <br><br><br>
             <h1 class="title-style">
-                <b> ExpDate: Expiration Date Dataset </b>
+                ExpDate: Expiration Date Dataset
             </h1>
 
             <br>
@@ -280,7 +284,7 @@ cd path/to/exe
                 <a href="https://drive.google.com/drive/folders/1YuxWzVj6bT6gs6XlewEGetYrdgwZt7EH?usp=sharing">
                     <b>ExpDate</b></a>,
                 which consists of real and synthetic images of the product, date,
-                and date component with various challenging cases.
+                and date components with various challenging cases.
             </p>
 
             <!-- Figure-3 -->
@@ -295,7 +299,7 @@ cd path/to/exe
                         </div>
                     </div>
                     <figcaption class="fig-caption">
-                        <b>Figure 3: </b>Expiration date images in ExpDate. It contains challenging date
+                        <b>Figure 3: </b>Expiration date images in Products-Real. It contains challenging date
                         images such as different font and date formats, multiple dates, etc.
                     </figcaption>
                 </figure>
@@ -305,27 +309,25 @@ cd path/to/exe
             <br>
             <h4> <b> Details </b> </h4>
             <p class="text">
-                A novel expiration date dataset, <b>Products-Real</b>, was created
+                For date detection task, a novel expiration date dataset, <b>Products-Real</b>, was created
                 by capturing 1767 real-world images with near-horizontal dates
                 from food, beverage, and medicine products.
                 It is split into training and test sets consisting of 1102 and 665 images.
                 Additionally, around 12k product images with synthetic dates were generated
                 to obtain various and challenging date samples.
-                This synthetic dataset is called as <b>Products-Synth</b> and used for training.
+                This synthetic dataset is called as <b>Products-Synth</b> and used only for training.
                 Figure <a href=#figure3> <span style="color: red"><b>3</b></span></a> visualizes
                 some date images from (a) Products-Real and (b) Products-Synth datasets.
 
                 <br><br>
-                To parse the date into one of the date formats,
+                To parse the dates into one of the date formats,
                 another novel dataset named <b>Date-Synth</b> was created
                 for training the DMY detection network, which contains 128k images with synthetic date region.
                 A test dataset, <b>Date-Real</b>, was constructed for evaluation,
-                which includes 510 real-world images of date regions.
-                These two datasets are annotated with the bounding boxes of the day, month, and year components.
 
                 <br><br>
                 For recognition task, a novel dataset, <b>Components-Synth</b>, was collected
-                by generating 450k training images with date component regions.
+                by generating 450k training images with synthetic date components.
                 The components of the dates in Date-Real were used to create a new dataset named
                 <b>Components-Real</b> for the evaluation of the recognition task.
 
@@ -391,11 +393,10 @@ cd path/to/exe
 
                 <br><br>
                 Each component in the Date-Real and Date-Synth datasets is annotated with class,
-                bounding box, and transcription. The day, month, and year stands for the classes
-                for each component of the date.
-                Moreover, Components-Real and Components-Synth datasets are in the LMDB database format
-                and contain day, month, and year transcriptions.
-
+                bounding box, and transcription. The day, month, and year are used as the classes
+                for each component of the dates.
+                Moreover, Components-Real and Components-Synth datasets consists of the components of
+                the day, month, and year and their transcriptions.
                 The annotation formats are shown in Figure
                 <a href=#figure4> <span style="color: red"><b>4</b></span></a>.
             </p>
