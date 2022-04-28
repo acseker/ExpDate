@@ -55,6 +55,8 @@ tr:nth-child(odd) {
 
 #container {
   height:300px;
+  width:100%;
+  background: #9b2226;
   position:relative;
   overflow:hidden;
 }
@@ -62,7 +64,6 @@ tr:nth-child(odd) {
 .photobanner {
   position:absolute;
   top:20px;
-  left:0;
   overflow:hidden;
   white-space: nowrap;
   animation: bannermove 30s linear infinite;
